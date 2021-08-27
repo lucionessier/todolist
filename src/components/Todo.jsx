@@ -2,12 +2,24 @@ import React, {useState} from 'react';
 import TodoForm from './TodoForm';
 import { RiCloseCircleFill , RiEdit2Line } from 'react-icons/ri';
 
-function Todo({todos,completeTodo}) {
+function Todo({todos,completeTodo,removeTodo,updateTodo}) {
 
     const [edit, setEdit] = useState({
         id:null,
         value:''
     })
+
+    const submitUpdate = value => {
+        updateTodo(edit.id, value);
+        setEdit({
+            id: null,
+            value: ''
+        })
+    }
+
+    if (edit.id) {
+        return <TodoForm edit={edit} onSubmit={submitUpdate}/>
+    }
 
     return todos.map((todo, index) => (
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
@@ -17,8 +29,11 @@ function Todo({todos,completeTodo}) {
                 </div>
 
                 <div className="icons">
-                    <RiCloseCircleFill/>
-                    <RiEdit2Line/>
+                    <RiCloseCircleFill onClick={() => removeTodo(todo.id)}
+                    className='delete-icon'
+                    />
+                    <RiEdit2Line onClick={() => setEdit({ id:todo.id , value: todo.text })}
+                    className='edit-icon'/>
 
                 </div>
 
