@@ -9,8 +9,8 @@
   body {
     background: linear-gradient(
       90deg,
-      rgba(48, 16, 255, 1) 0%,
-      rgba(100, 115, 255, 1) 100%
+      hsl(199, 65%, 36%),
+      hsl(199, 57%, 51%)
     );
   }
   .todo-app {
@@ -19,7 +19,7 @@
     justify-content: start;
     width: 520px;
     min-height: 600px;
-    background: #161a2b;
+    background: hsl(199, 39%, 23%);
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -44,7 +44,7 @@
   .todo-input {
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
-    border: 2px solid #5d0cff;
+    border: 2px solid hsl(199, 57%, 51%);
     outline: none;
     width: 320px;
     background: transparent;
@@ -63,8 +63,9 @@
     outline: none;
     background: linear-gradient(
       90deg,
-      rgba(93, 12, 255, 1) 0%,
-      rgba(155, 0, 250, 1) 100%
+      hsl(199, 57%, 51%),
+      hsl(199, 65%, 36%)
+      
     );
     color: #fff;
     text-transform: capitalize;
