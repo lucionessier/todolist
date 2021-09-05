@@ -146,3 +146,114 @@
   .edit-icon {
     color: #fff;
   }
+
+/* MEDIA QUERIES */
+
+/* For small devices */
+
+@media screen and (max-width: 350px) {
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 320px;
+    min-height: 600px;
+    background: hsl(199, 39%, 23%);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+
+
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid hsl(199, 57%, 51%);
+    outline: none;
+    width: 150px;
+    background: transparent;
+    color: #fff;
+  }
+
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      hsl(199, 57%, 51%),
+      hsl(199, 65%, 36%)
+      
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 80%;
+  }
+
+}
+
+
+/* MEDIUM DEVICES */
+
+@media screen and (min-width: 568px) {
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 420px;
+    min-height: 600px;
+    background: hsl(199, 39%, 23%);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+
+
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid hsl(199, 57%, 51%);
+    outline: none;
+    width: 270px;
+    background: transparent;
+    color: #fff;
+  }
+
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+}
