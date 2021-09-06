@@ -152,6 +152,13 @@
 /* For small devices */
 
 @media screen and (max-width: 350px) {
+  
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+  
   .todo-app {
     display: flex;
     flex-direction: column;
@@ -256,4 +263,9 @@
     border-radius: 5px;
     width: 90%;
   }
+}
+
+
+@media screen and (min-width: 768px)  {
+  
 }
