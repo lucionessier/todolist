@@ -1,23 +1,21 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
   }
   
   body {
-    background: linear-gradient(
-      90deg,
-      hsl(199, 65%, 36%),
-      hsl(199, 57%, 51%)
-    );
+    background: hsl(199, 57%, 51%);
+    
   }
+
   .todo-app {
-    display: flex;
+    display: flex;  
     flex-direction: column;
     justify-content: start;
-    width: 520px;
+    width: 820px;
     min-height: 600px;
     background: hsl(199, 39%, 23%);
     text-align: center;
@@ -151,7 +149,7 @@
 
 /* For small devices */
 
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 350px) and (max-width: 567px) {
   
   h1 {
     margin: 32px 0;
@@ -178,7 +176,7 @@
     border-radius: 4px 0 0 4px;
     border: 2px solid hsl(199, 57%, 51%);
     outline: none;
-    width: 150px;
+    width: 170px;
     background: transparent;
     color: #fff;
   }
@@ -202,7 +200,7 @@
 
   .todo-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     margin: 4px auto;
     color: #fff;
@@ -214,7 +212,7 @@
   
     padding: 16px;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
   }
 
 }
@@ -223,6 +221,13 @@
 /* MEDIUM DEVICES */
 
 @media screen and (min-width: 568px) {
+
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 22px;
+  }
+
   .todo-app {
     display: flex;
     flex-direction: column;
@@ -268,4 +273,113 @@
 
 @media screen and (min-width: 768px)  {
   
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 28px;
+  }
+
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 620px;
+    min-height: 600px;
+    background: hsl(199, 39%, 23%);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+
+
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid hsl(199, 57%, 51%);
+    outline: none;
+    width: 420px;
+    background: transparent;
+    color: #fff;
+  }
+
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+
+}
+
+
+/* BIG DEVICES */
+
+@media screen and (min-width: 1024px)  {
+  
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 36px;
+  }
+
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 820px;
+    min-height: 600px;
+    background: hsl(199, 39%, 23%);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+
+
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid hsl(199, 57%, 51%);
+    outline: none;
+    width: 620px;
+    background: transparent;
+    color: #fff;
+  }
+
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+
+  .icons {
+    display: flex;
+    align-items: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
 }
