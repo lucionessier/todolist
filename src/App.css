@@ -145,6 +145,23 @@
     color: #fff;
   }
 
+  footer {
+    background: hsl(199, 39%, 23%);
+    height: 3rem;
+  }
+
+  .copy {
+    text-align: center;
+    color: #fff;
+    margin: 30px;
+    padding-top: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: hsl(199, 57%, 51%);
+  }
+
 /* MEDIA QUERIES */
 
 /* For small devices */
@@ -213,6 +230,11 @@
     padding: 16px;
     border-radius: 5px;
     width: 90%;
+  }
+
+  footer {
+    background: hsl(199, 39%, 23%);
+    height: 3.5rem;
   }
 
 }
