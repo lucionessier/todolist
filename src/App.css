@@ -17,7 +17,7 @@
     justify-content: start;
     width: 820px;
     min-height: 600px;
-    background: hsl(199, 39%, 23%);
+    background: #fff;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -41,7 +41,7 @@
   
   .todo-input {
     padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 25px;
     border: 2px solid hsl(199, 57%, 51%);
     outline: none;
     width: 320px;
@@ -50,7 +50,7 @@
   }
   
   .todo-input::placeholder {
-    color: #e2e2e2;
+    color: hsl(199, 65%, 36%);
   }
   
   .todo-button {
@@ -170,7 +170,7 @@
   
   h1 {
     margin: 32px 0;
-    color: #fff;
+    color: hsl(199, 39%, 23%);
     font-size: 14px;
   }
   
@@ -180,7 +180,7 @@
     justify-content: start;
     width: 320px;
     min-height: 600px;
-    background: hsl(199, 39%, 23%);
+    background: #fff;;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -190,18 +190,18 @@
 
   .todo-input {
     padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 25px 0px 0px 25px;
     border: 2px solid hsl(199, 57%, 51%);
     outline: none;
     width: 170px;
     background: transparent;
-    color: #fff;
+    color: hsl(199, 65%, 36%);
   }
 
   .todo-button {
     padding: 16px;
     border: none;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 25px 25px 0;
     cursor: pointer;
     outline: none;
     background: linear-gradient(
@@ -246,7 +246,7 @@
 
   h1 {
     margin: 32px 0;
-    color: #fff;
+    color: hsl(199, 39%, 23%);
     font-size: 22px;
   }
 
@@ -256,7 +256,7 @@
     justify-content: start;
     width: 420px;
     min-height: 600px;
-    background: hsl(199, 39%, 23%);
+    background: #fff;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -266,12 +266,28 @@
 
   .todo-input {
     padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 25px 0px 0px 25px;
     border: 2px solid hsl(199, 57%, 51%);
     outline: none;
     width: 270px;
     background: transparent;
+    color: hsl(199, 39%, 23%);
+  }
+
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      hsl(199, 57%, 51%),
+      hsl(199, 65%, 36%)
+      
+    );
     color: #fff;
+    text-transform: capitalize;
   }
 
   .todo-row {
@@ -297,7 +313,7 @@
   
   h1 {
     margin: 32px 0;
-    color: #fff;
+    color: hsl(199, 39%, 23%);
     font-size: 28px;
   }
 
@@ -307,22 +323,41 @@
     justify-content: start;
     width: 620px;
     min-height: 600px;
-    background: hsl(199, 39%, 23%);
+    background: #fff;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
     padding-bottom: 32px;
   }
 
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      hsl(199, 57%, 51%),
+      hsl(199, 65%, 36%)
+      
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
 
   .todo-input {
     padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 25px 0px 0px 25px;
     border: 2px solid hsl(199, 57%, 51%);
     outline: none;
     width: 420px;
     background: transparent;
-    color: #fff;
+    color: hsl(199, 39%, 23%);
+  }
+
+  .todo-input:hover {
+    border: 2px solid hsl(199, 39%, 23%);
   }
 
   .todo-row {
@@ -351,7 +386,7 @@
   
   h1 {
     margin: 32px 0;
-    color: #fff;
+    color: hsl(199, 39%, 23%);
     font-size: 36px;
   }
 
@@ -361,7 +396,7 @@
     justify-content: start;
     width: 820px;
     min-height: 600px;
-    background: hsl(199, 39%, 23%);
+    background: #fff;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -371,12 +406,16 @@
 
   .todo-input {
     padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 25px 0px 0px 25px;
     border: 2px solid hsl(199, 57%, 51%);
     outline: none;
     width: 620px;
     background: transparent;
-    color: #fff;
+    color: hsl(199, 39%, 23%);
+  }
+
+  .todo-input:hover {
+    border: 2px solid hsl(199, 39%, 23%);
   }
 
   .todo-row {
@@ -402,6 +441,23 @@
     align-items: flex-end;
     font-size: 24px;
     cursor: pointer;
+  }
+
+
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      hsl(199, 57%, 51%),
+      hsl(199, 65%, 36%)
+      
+    );
+    color: #fff;
+    text-transform: capitalize;
   }
 
 }
